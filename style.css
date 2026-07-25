@@ -2553,3 +2553,36 @@ input:checked + .slider:before {
   opacity: 1;
   transform: translateY(-3px) scale(1.05);
 }
+/* ==========================================================================
+   MINIMAL ACCESSIBILITY FIXES (FOR 90+ SCORE)
+   ========================================================================== */
+
+/* 1. Improve text contrast ratios */
+body, p, span, li, .section-description, .hero-subtitle, .stat-label {
+    color: #334155 !important; /* Compliant high contrast text */
+}
+
+.section-tag {
+    color: #1d4ed8 !important; /* Visible primary tag color */
+}
+
+/* 2. Accessible focus state for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #2563eb !important;
+    outline-offset: 2px !important;
+}
+
+/* 3. High contrast footer links & muted text */
+.footer p, .footer ul li a, .footer-bottom {
+    color: #cbd5e1 !important;
+}
+
+/* 4. Form inputs placeholder contrast */
+::placeholder {
+    color: #64748b !important;
+    opacity: 1;
+}
