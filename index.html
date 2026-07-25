@@ -2,61 +2,43 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>NorthPeak Digital | Digital Agency</title>
-
-    <meta name="description"
-          content="NorthPeak Digital helps businesses grow through modern websites, branding and digital marketing.">
+    <meta name="description" content="NorthPeak Digital helps businesses grow through modern websites, branding and digital marketing.">
 
     <!-- Google Font -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-          rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet"
-          href="style.css">
-
+    <!-- External Scripts with DEFER for high performance -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<!-- ===================================== -->
-<!-- Navbar -->
-<!-- ===================================== -->
-
-<!-- =========================== -->
 <!-- NAVBAR / HEADER -->
-<!-- =========================== -->
 <header class="header">
   <div class="header-container">
-    
-    <!-- Brand Logo -->
     <a href="#" class="brand-logo">
       <span class="logo-accent">North</span>Peak<span>.</span>
     </a>
 
-    <!-- Navigation Links -->
     <nav class="nav-menu">
       <a href="#services" class="nav-link active">Services</a>
       <a href="#why-us" class="nav-link">Why Us</a>
@@ -64,29 +46,16 @@
       <a href="#pricing" class="nav-link">Pricing</a>
     </nav>
 
-    <!-- Header Actions -->
     <div class="header-actions">
       <a href="#contact" class="btn-secondary">Log In</a>
       <a href="#contact" class="btn-primary">Get Started</a>
     </div>
-
   </div>
 </header>
 
-
-
-
-<!-- ===================================== -->
-<!-- Hero -->
-<!-- ===================================== -->
-
-<!-- =========================== -->
 <!-- HERO SECTION -->
-<!-- =========================== -->
 <section class="hero">
   <div class="hero-container">
-    
-    <!-- Hero Left: Content -->
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
@@ -109,21 +78,19 @@
         <a href="#services" class="btn-hero-secondary">Explore Services</a>
       </div>
 
-      <!-- Trust Indicators -->
       <div class="hero-trust">
         <div class="rating-stars">★★★★★</div>
         <p>Trusted by <strong>200+ global brands</strong> worldwide</p>
       </div>
     </div>
 
-    <!-- Hero Right: Interactive Dashboard Visual -->
+    <!-- Hero Right Visual (Explicit Dimensions, NO lazy load for immediate hero render) -->
     <div class="hero-visual">
       <div class="visual-glow"></div>
       
       <div class="dashboard-wrapper">
-        <img src="assets/images/dashboard.png" alt="NorthPeak Analytics Dashboard" class="hero-dashboard-img">
+        <img src="assets/images/dashboard.png" alt="NorthPeak Analytics Dashboard" width="800" height="500">
         
-        <!-- Floating Stat Card 1 -->
         <div class="floating-stat stat-one">
           <div class="stat-icon green">↑</div>
           <div>
@@ -132,7 +99,6 @@
           </div>
         </div>
 
-        <!-- Floating Stat Card 2 -->
         <div class="floating-stat stat-two">
           <div class="stat-icon blue">⚡</div>
           <div>
@@ -142,1056 +108,353 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ================================= -->
-<!-- Trusted Companies -->
-<!-- ================================= -->
-
-
+<!-- TRUSTED COMPANIES (Logos with width, height & lazy loading) -->
 <section class="trusted-by">
   <div class="container">
     <h3>Trusted by innovative companies</h3>
     <div class="logo-grid">
-      <img src="assets/images/logo1.svg" alt="Kong">
-      <img src="assets/images/logo2.svg" alt="OpenGL">
-      <img src="assets/images/logo3.svg" alt="Ripple">
-      <img src="assets/images/logo4.svg" alt="Scaleway">
-      <img src="assets/images/logo5.svg" alt="PCI Security">
-      <img src="assets/images/logo6.svg" alt="ProtonMail">
+      <img src="assets/images/logo1.svg" alt="Kong Logo" width="120" height="40" loading="lazy">
+      <img src="assets/images/logo2.svg" alt="OpenGL Logo" width="120" height="40" loading="lazy">
+      <img src="assets/images/logo3.svg" alt="Ripple Logo" width="120" height="40" loading="lazy">
+      <img src="assets/images/logo4.svg" alt="Scaleway Logo" width="120" height="40" loading="lazy">
+      <img src="assets/images/logo5.svg" alt="PCI Security Logo" width="120" height="40" loading="lazy">
+      <img src="assets/images/logo6.svg" alt="ProtonMail Logo" width="120" height="40" loading="lazy">
     </div>
   </div>
 </section>
-<!DOCTYPE html>
-<html>
 
-<body>
-
-    <script src="script.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-
-</body>
-
-<!-- ======================================== -->
 <!-- TESTIMONIALS SECTION -->
-<!-- ======================================== -->
-
 <section class="testimonials" id="testimonials">
-
     <div class="section-header" data-aos="fade-up">
-
-        <p class="section-tag">
-            TESTIMONIALS
-        </p>
-
-        <h2>
-            Loved by Businesses
-            <span>Across the World</span>
-        </h2>
-
+        <p class="section-tag">TESTIMONIALS</p>
+        <h2>Loved by Businesses <span>Across the World</span></h2>
         <p class="section-description">
-            We help startups, agencies and enterprises build
-            beautiful digital experiences that deliver measurable
-            business growth.
+            We help startups, agencies and enterprises build beautiful digital experiences that deliver measurable business growth.
         </p>
-
     </div>
-
 
     <div class="testimonial-container">
-
         <!-- Card 1 -->
-
         <div class="testimonial-card" data-aos="fade-up">
-
-            <div class="quote-icon">
-                <i class="fa-solid fa-quote-left"></i>
-            </div>
-
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
             <p class="review">
-
-                NorthPeak Digital completely transformed our
-                website. Within three months our online enquiries
-                increased dramatically and our brand finally
-                looked premium.
-
+                NorthPeak Digital completely transformed our website. Within three months our online enquiries increased dramatically and our brand finally looked premium.
             </p>
-
             <div class="stars">
-
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-
             <div class="client">
-
-                <img src="assets/images/client1.jpg" alt="Robin Johnson">
-
+                <img src="assets/images/client1.jpg" alt="Robin Johnson - CEO Elevate Studio" width="100" height="100" loading="lazy">
                 <div>
-
                     <h4>Robin Johnson</h4>
-
                     <span>CEO • Elevate Studio</span>
-
                 </div>
-
             </div>
-
         </div>
-
-
 
         <!-- Card 2 -->
-
-        <div class="testimonial-card featured"
-             data-aos="zoom-in">
-
-            <div class="quote-icon">
-                <i class="fa-solid fa-quote-left"></i>
-            </div>
-
+        <div class="testimonial-card featured" data-aos="zoom-in">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
             <p class="review">
-
-                The team delivered beyond expectations.
-                The UI is modern, fast and optimized.
-                We now convert nearly twice as many visitors.
-
+                The team delivered beyond expectations. The UI is modern, fast and optimized. We now convert nearly twice as many visitors.
             </p>
-
             <div class="stars">
-
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-
             <div class="client">
-
-                <img src="assets/images/client2.jpg" alt="Sarah miller">
+                <img src="assets/images/client2.jpg" alt="Sarah Miller - Founder NovaTech" width="100" height="100" loading="lazy">
                 <div>
-
-                    <h4>Sarah miller</h4>
-
+                    <h4>Sarah Miller</h4>
                     <span>Founder • NovaTech</span>
-
                 </div>
-
             </div>
-
         </div>
-
-
 
         <!-- Card 3 -->
-
-        <div class="testimonial-card"
-             data-aos="fade-up">
-
-            <div class="quote-icon">
-
-                <i class="fa-solid fa-quote-left"></i>
-
-            </div>
-
+        <div class="testimonial-card" data-aos="fade-up">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
             <p class="review">
-
-                Excellent communication, clean code,
-                beautiful design and an amazing user
-                experience. Highly recommended.
-
+                Excellent communication, clean code, beautiful design and an amazing user experience. Highly recommended.
             </p>
-
             <div class="stars">
-
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-
             <div class="client">
-
-                <img src="assets/images/client3.jpg" alt="Emma Wilson">
+                <img src="assets/images/client3.jpg" alt="Emma Wilson - Marketing Director VisionLab" width="100" height="100" loading="lazy">
                 <div>
-
                     <h4>Emma Wilson</h4>
-
                     <span>Marketing Director • VisionLab</span>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-<!-- ========================================= -->
 <!-- PRICING SECTION -->
-<!-- ========================================= -->
-
 <section class="pricing-section" id="pricing">
-
     <div class="container">
-
-        <!-- Section Heading -->
-
         <div class="section-heading" data-aos="fade-up">
-
-            <span class="section-tag">
-                Pricing
-            </span>
-
-            <h2>
-                Choose a Plan That
-                <span>Fits Your Business</span>
-            </h2>
-
-            <p>
-                Transparent pricing with no hidden charges.
-                Start small and scale as your business grows.
-            </p>
-
+            <span class="section-tag">Pricing</span>
+            <h2>Choose a Plan That <span>Fits Your Business</span></h2>
+            <p>Transparent pricing with no hidden charges. Start small and scale as your business grows.</p>
         </div>
-
-
-
-        <!-- Monthly / Yearly Toggle -->
 
         <div class="pricing-toggle" data-aos="zoom-in">
-
-            <span class="toggle-text active">
-                Monthly
-            </span>
-
+            <span class="toggle-text active">Monthly</span>
             <label class="switch">
-
-                <input type="checkbox"
-                       id="priceToggle">
-
+                <input type="checkbox" id="priceToggle">
                 <span class="slider round"></span>
-
             </label>
-
-            <span class="toggle-text">
-                Yearly
-                <small>(Save 20%)</small>
-            </span>
-
+            <span class="toggle-text">Yearly <small>(Save 20%)</small></span>
         </div>
-
-
-
-        <!-- Pricing Cards -->
 
         <div class="pricing-wrapper">
-
-
-
-            <!-- =================================== -->
             <!-- STARTER PLAN -->
-            <!-- =================================== -->
-
-            <div class="pricing-card"
-                 data-aos="fade-right">
-
-                <div class="plan-icon">
-
-                    <i class="fa-solid fa-rocket"></i>
-
-                </div>
-
-                <h3>
-
-                    Starter
-
-                </h3>
-
-                <p class="plan-description">
-
-                    Perfect for startups and
-                    personal businesses.
-
-                </p>
-
-
+            <div class="pricing-card" data-aos="fade-right">
+                <div class="plan-icon"><i class="fa-solid fa-rocket"></i></div>
+                <h3>Starter</h3>
+                <p class="plan-description">Perfect for startups and personal businesses.</p>
                 <div class="price">
-
                     <span class="currency">$</span>
-
-                    <span class="amount monthly-price">
-
-                        299
-
-                    </span>
-
-                    <span class="amount yearly-price">
-
-                        239
-
-                    </span>
-
-                    <span class="duration">
-
-                        /month
-
-                    </span>
-
+                    <span class="amount monthly-price">299</span>
+                    <span class="amount yearly-price">239</span>
+                    <span class="duration">/month</span>
                 </div>
-
-
-
                 <ul class="pricing-features">
-
-                    <li>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Responsive Website
-
-                    </li>
-
-                    <li>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Up to 5 Pages
-
-                    </li>
-
-                    <li>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Basic SEO Setup
-
-                    </li>
-
-                    <li>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Mobile Optimization
-
-                    </li>
-
-                    <li>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Contact Form
-
-                    </li>
-
-                    <li>
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Free SSL Certificate
-
-                    </li>
-
+                    <li><i class="fa-solid fa-circle-check"></i> Responsive Website</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Up to 5 Pages</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Basic SEO Setup</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Mobile Optimization</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Contact Form</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Free SSL Certificate</li>
                 </ul>
-
-
-
-                <a href="#contact"
-                   class="pricing-btn">
-
-                    Get Started
-
-                </a>
-
+                <a href="#contact" class="pricing-btn">Get Started</a>
             </div>
-                        <!-- =================================== -->
+
             <!-- PROFESSIONAL PLAN -->
-            <!-- =================================== -->
-
-            <div class="pricing-card featured-card"
-                 data-aos="zoom-in">
-
-                <div class="popular-badge">
-                    ⭐ Most Popular
-                </div>
-
-                <div class="plan-icon featured-icon">
-                    <i class="fa-solid fa-crown"></i>
-                </div>
-
-                <h3>
-                    Professional
-                </h3>
-
-                <p class="plan-description">
-
-                    Best for growing businesses
-                    looking to scale online.
-
-                </p>
-
+            <div class="pricing-card featured-card" data-aos="zoom-in">
+                <div class="popular-badge">⭐ Most Popular</div>
+                <div class="plan-icon featured-icon"><i class="fa-solid fa-crown"></i></div>
+                <h3>Professional</h3>
+                <p class="plan-description">Best for growing businesses looking to scale online.</p>
                 <div class="price">
-
                     <span class="currency">$</span>
-
-                    <span class="amount monthly-price">
-
-                        699
-
-                    </span>
-
-                    <span class="amount yearly-price">
-
-                        559
-
-                    </span>
-
-                    <span class="duration">
-
-                        /month
-
-                    </span>
-
+                    <span class="amount monthly-price">699</span>
+                    <span class="amount yearly-price">559</span>
+                    <span class="duration">/month</span>
                 </div>
-
                 <ul class="pricing-features">
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Everything in Starter
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Up to 15 Pages
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Advanced SEO
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Speed Optimization
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Analytics Dashboard
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Priority Support
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Monthly Maintenance
-                    </li>
-
+                    <li><i class="fa-solid fa-circle-check"></i> Everything in Starter</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Up to 15 Pages</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Advanced SEO</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Speed Optimization</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Analytics Dashboard</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Priority Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Monthly Maintenance</li>
                 </ul>
-
-                <a href="#contact"
-                   class="pricing-btn featured-btn">
-
-                    Start Growing
-
-                </a>
-
+                <a href="#contact" class="pricing-btn featured-btn">Start Growing</a>
             </div>
 
-
-
-
-
-            <!-- =================================== -->
             <!-- ENTERPRISE PLAN -->
-            <!-- =================================== -->
-
-            <div class="pricing-card"
-                 data-aos="fade-left">
-
-                <div class="plan-icon">
-
-                    <i class="fa-solid fa-building"></i>
-
-                </div>
-
-                <h3>
-
-                    Enterprise
-
-                </h3>
-
-                <p class="plan-description">
-
-                    Complete digital solution
-                    for enterprises and brands.
-
-                </p>
-
+            <div class="pricing-card" data-aos="fade-left">
+                <div class="plan-icon"><i class="fa-solid fa-building"></i></div>
+                <h3>Enterprise</h3>
+                <p class="plan-description">Complete digital solution for enterprises and brands.</p>
                 <div class="price">
-
-                    <span class="custom-price">
-
-                        Custom Quote
-
-                    </span>
-
+                    <span class="custom-price">Custom Quote</span>
                 </div>
-
                 <ul class="pricing-features">
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Unlimited Pages
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Custom Web Application
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Dedicated Team
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Premium UI/UX Design
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        API Integrations
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Security Monitoring
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        24×7 Dedicated Support
-                    </li>
-
+                    <li><i class="fa-solid fa-circle-check"></i> Unlimited Pages</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Custom Web Application</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Dedicated Team</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Premium UI/UX Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i> API Integrations</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Security Monitoring</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 24×7 Dedicated Support</li>
                 </ul>
-
-                <a href="#contact"
-                   class="pricing-btn">
-
-                    Contact Sales
-
-                </a>
-
+                <a href="#contact" class="pricing-btn">Contact Sales</a>
             </div>
-
         </div>
-
     </div>
-
 </section>
-<!-- ======================================== -->
+
 <!-- WHY CHOOSE US -->
-<!-- ======================================== -->
-
 <section class="why-us" id="why-us">
-
     <div class="container">
-
         <div class="section-heading" data-aos="fade-up">
-
-            <span class="section-tag">
-                WHY CHOOSE US
-            </span>
-
-            <h2>
-                More Than A Website.
-                <span>We Build Growth Engines.</span>
-            </h2>
-
-            <p>
-                Every project is designed with strategy, performance,
-                accessibility and conversion in mind.
-            </p>
-
+            <span class="section-tag">WHY CHOOSE US</span>
+            <h2>More Than A Website. <span>We Build Growth Engines.</span></h2>
+            <p>Every project is designed with strategy, performance, accessibility and conversion in mind.</p>
         </div>
-
-
 
         <div class="why-grid">
-
-            <!-- Card 1 -->
-
             <div class="why-card" data-aos="fade-up">
-
-                <div class="why-icon">
-
-                    <i class="fa-solid fa-gauge-high"></i>
-
-                </div>
-
-                <h3>
-
-                    Lightning Fast
-
-                </h3>
-
-                <p>
-
-                    Optimized code, compressed assets,
-                    lazy loading and 90+ Lighthouse scores.
-
-                </p>
-
+                <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized code, compressed assets, lazy loading and 90+ Lighthouse scores.</p>
             </div>
 
-
-
-            <!-- Card 2 -->
-
-            <div class="why-card" data-aos="fade-up"
-                 data-aos-delay="150">
-
-                <div class="why-icon">
-
-                    <i class="fa-solid fa-shield-halved"></i>
-
-                </div>
-
-                <h3>
-
-                    Secure
-
-                </h3>
-
-                <p>
-
-                    Modern development practices with
-                    responsive layouts and secure forms.
-
-                </p>
-
+            <div class="why-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Secure</h3>
+                <p>Modern development practices with responsive layouts and secure forms.</p>
             </div>
 
-
-
-            <!-- Card 3 -->
-
-            <div class="why-card" data-aos="fade-up"
-                 data-aos-delay="300">
-
-                <div class="why-icon">
-
-                    <i class="fa-solid fa-chart-line"></i>
-
-                </div>
-
-                <h3>
-
-                    Business Growth
-
-                </h3>
-
-                <p>
-
-                    Every page is built to improve
-                    engagement, leads and conversions.
-
-                </p>
-
+            <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="why-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Business Growth</h3>
+                <p>Every page is built to improve engagement, leads and conversions.</p>
             </div>
 
-
-
-            <!-- Card 4 -->
-
-            <div class="why-card" data-aos="fade-up"
-                 data-aos-delay="450">
-
-                <div class="why-icon">
-
-                    <i class="fa-solid fa-headset"></i>
-
-                </div>
-
-                <h3>
-
-                    Dedicated Support
-
-                </h3>
-
-                <p>
-
-                    We stay with you after launch,
-                    helping your business continue to grow.
-
-                </p>
-
+            <div class="why-card" data-aos="fade-up" data-aos-delay="450">
+                <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Dedicated Support</h3>
+                <p>We stay with you after launch, helping your business continue to grow.</p>
             </div>
-
         </div>
 
-
-
-
-        <!-- Bottom Highlight -->
-
-        <div class="why-banner"
-             data-aos="zoom-in">
-
+        <div class="why-banner" data-aos="zoom-in">
             <div>
-
-                <h3>
-
-                    500+ Successful Projects
-
-                </h3>
-
-                <p>
-
-                    Helping startups, agencies and enterprises
-                    grow with modern digital experiences.
-
-                </p>
-
+                <h3>500+ Successful Projects</h3>
+                <p>Helping startups, agencies and enterprises grow with modern digital experiences.</p>
             </div>
-
-
-            <a href="#contact"
-               class="primary-btn">
-
-                Let's Build Together
-
-                <i class="fa-solid fa-arrow-right"></i>
-
+            <a href="#contact" class="primary-btn">
+                Let's Build Together <i class="fa-solid fa-arrow-right"></i>
             </a>
-
         </div>
-
     </div>
-
 </section>
-<!-- ======================================== -->
+
 <!-- CONTACT SECTION -->
-<!-- ======================================== -->
-
 <section class="contact" id="contact">
-
     <div class="container">
-
         <div class="section-heading" data-aos="fade-up">
-
-            <span class="section-tag">
-                CONTACT US
-            </span>
-
-            <h2>
-                Let's Build Something
-                <span>Amazing Together</span>
-            </h2>
-
-            <p>
-                Ready to transform your business?
-                Tell us about your project and we'll get back
-                within 24 hours.
-            </p>
-
+            <span class="section-tag">CONTACT US</span>
+            <h2>Let's Build Something <span>Amazing Together</span></h2>
+            <p>Ready to transform your business? Tell us about your project and we'll get back within 24 hours.</p>
         </div>
 
         <div class="contact-wrapper">
-
-            <!-- Left -->
-
             <div class="contact-info" data-aos="fade-right">
-
                 <h3>Get In Touch</h3>
-
-                <p>
-                    We'd love to hear about your next project.
-                </p>
+                <p>We'd love to hear about your next project.</p>
 
                 <div class="info-box">
-
                     <i class="fa-solid fa-envelope"></i>
-
                     <div>
-
                         <h4>Email</h4>
-
                         <p>hello@northpeakdigital.com</p>
-
                     </div>
-
                 </div>
 
                 <div class="info-box">
-
                     <i class="fa-solid fa-phone"></i>
-
                     <div>
-
                         <h4>Phone</h4>
-
                         <p>+1 234 567 890</p>
-
                     </div>
-
                 </div>
 
                 <div class="info-box">
-
                     <i class="fa-solid fa-location-dot"></i>
-
                     <div>
-
                         <h4>Location</h4>
-
                         <p>New York, USA</p>
-
                     </div>
-
                 </div>
 
                 <div class="social-icons">
-
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
                 </div>
-
             </div>
 
-            <!-- Right -->
-
-            <form class="contact-form"
-                  data-aos="fade-left">
-
-                <input type="text"
-                       placeholder="Full Name"
-                       required>
-
-                <input type="email"
-                       placeholder="Email Address"
-                       required>
-
-                <input type="tel"
-                       placeholder="Phone Number">
-
-                <input type="text"
-                       placeholder="Company">
-
-                <select>
-
+            <form class="contact-form" data-aos="fade-left">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number">
+                <input type="text" placeholder="Company">
+                
+                <select aria-label="Project Budget">
                     <option>Project Budget</option>
-
                     <option>$500 - $1000</option>
-
                     <option>$1000 - $3000</option>
-
                     <option>$3000+</option>
-
                 </select>
 
-                <textarea rows="6"
-                          placeholder="Tell us about your project"></textarea>
-
-                <button type="submit"
-                        class="primary-btn">
-
-                    Send Message
-
-                </button>
-
+                <textarea rows="6" placeholder="Tell us about your project"></textarea>
+                <button type="submit" class="primary-btn">Send Message</button>
             </form>
+        </div>
+    </div>
+</section>
 
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3>NorthPeak Digital</h3>
+                <p>Creating modern digital experiences that help businesses grow.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Design</li>
+                    <li>UI/UX</li>
+                    <li>SEO</li>
+                    <li>Branding</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Enter Email">
+                <button>Subscribe</button>
+            </div>
         </div>
 
+        <hr>
+
+        <div class="footer-bottom">
+            <p>© 2026 NorthPeak Digital. All Rights Reserved.</p>
+            <p class="credit-line">
+                Built for <a href="https://digitalheroesco.com" target="_blank" rel="noopener">Digital Heroes Training Task</a>
+            </p>
+        </div>
     </div>
-
-</section>
-<!-- ======================================== -->
-<!-- FOOTER -->
-<!-- ======================================== -->
-
-<footer class="footer">
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>NorthPeak Digital</h3>
-
-<p>
-
-Creating modern digital experiences
-that help businesses grow.
-
-</p>
-
-</div>
-
-<div>
-
-<h4>Quick Links</h4>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#services">Services</a></li>
-
-<li><a href="#pricing">Pricing</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4>Services</h4>
-
-<ul>
-
-<li>Web Design</li>
-
-<li>UI/UX</li>
-
-<li>SEO</li>
-
-<li>Branding</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4>Newsletter</h4>
-
-<input type="email"
-placeholder="Enter Email">
-
-<button>
-
-Subscribe
-
-</button>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="footer-bottom">
-
-<p>
-
-© 2026 NorthPeak Digital.
-All Rights Reserved.
-
-</p>
-
-<p>
-
-<a href="https://digitalheroesco.com">
-
-Built for Digital Heroes Training Task
-
-</a>
-
-</p>
-
-</div>
-
-</div>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 NorthPeak Digital. All rights reserved.</p>
-    <!-- REQUIRED CREDIT LINE -->
-    <p class="credit-line">
-      Built for <a href="https://digitalheroesco.com" target="_blank" rel="noopener">Digital Heroes Training Task</a>
-    </p>
-  </div>
 </footer>
 
-</footer>
-<!-- ======================================== -->
 <!-- BACK TO TOP -->
-<!-- ======================================== -->
-
-<button id="backToTop">
-
-<i class="fa-solid fa-arrow-up"></i>
-
+<button id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
 </button>
-<!-- ======================================== -->
-<!-- JAVASCRIPT -->
-<!-- ======================================== -->
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script src="script.js"></script>
-
+<!-- Inline script for AOS Initialization -->
 <script>
-
-AOS.init({
-
-duration:1000,
-
-once:true,
-
-offset:100
-
-});
-
+    document.addEventListener("DOMContentLoaded", function() {
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+        }
+    });
 </script>
-</body>
 
-</html>
-</html>
-<!-- Script Imports -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-    </script>
 </body>
+</html>
