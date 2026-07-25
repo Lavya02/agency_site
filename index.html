@@ -28,22 +28,20 @@
     <script src="js/validation.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="script.js" defer></script>
-
-    <!-- Google Fonts Preconnect & Load -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- NAVBAR / HEADER -->
+<!-- NAVBAR / HEADER -->
 <header class="header">
   <div class="header-container">
+    <!-- Brand Logo -->
     <a href="#" class="brand-logo" aria-label="NorthPeak Digital Home">
       <span class="logo-accent">North</span>Peak<span>.</span>
     </a>
 
+    <!-- Center Navigation Links -->
     <nav class="nav-menu" aria-label="Main Navigation">
       <a href="#services" class="nav-link active">Services</a>
       <a href="#why-us" class="nav-link">Why Us</a>
@@ -51,15 +49,22 @@
       <a href="#pricing" class="nav-link">Pricing</a>
     </nav>
 
+    <!-- Right Actions -->
     <div class="header-actions">
       <a href="#contact" class="btn-secondary">Log In</a>
       <a href="#contact" class="btn-primary">Get Started</a>
     </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </label>
   </div>
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero-container">
     <div class="hero-content">
       <div class="hero-badge">
@@ -94,14 +99,14 @@
       <div class="visual-glow"></div>
       
       <div class="dashboard-wrapper">
-       <img 
-        src="assets/images/dashboard.png" 
-        alt="NorthPeak Digital Analytics Dashboard showcasing key performance metrics" 
-        width="800" 
-        height="450" 
-        loading="lazy" 
-        class="dashboard-img"
->
+        <img 
+          src="assets/images/dashboard.png" 
+          alt="NorthPeak Digital Analytics Dashboard showcasing key performance metrics" 
+          width="800" 
+          height="450" 
+          loading="lazy" 
+          class="dashboard-img"
+        >
         
         <div class="floating-stat stat-one">
           <div class="stat-icon green" aria-hidden="true">↑</div>
@@ -138,67 +143,160 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS SECTION -->
-<section class="testimonials" id="testimonials">
-    <div class="section-header" data-aos="fade-up">
-        <p class="section-tag">TESTIMONIALS</p>
-        <h2>Loved by Businesses <span>Across the World</span></h2>
-        <p class="section-description">
-            We help startups, agencies and enterprises build beautiful digital experiences that deliver measurable business growth.
-        </p>
+<!-- SERVICES SECTION (UPDATED CLEAN & PROFESSIONAL LAYOUT) -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-tag">OUR SERVICES</span>
+      <h2>Tailored Solutions for <span>Digital Growth</span></h2>
+      <p>From concept to code, we offer comprehensive services to build and optimize your online presence.</p>
     </div>
 
-    <div class="testimonial-container">
-        <!-- Card 1 -->
-        <div class="testimonial-card" data-aos="fade-up">
-            <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
-            <p class="review">
-                NorthPeak Digital completely transformed our website. Within three months our online enquiries increased dramatically and our brand finally looked premium.
+    <div class="services-grid">
+      <!-- Service Card 1 -->
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+        </div>
+        <h3>Web Development</h3>
+        <p>Custom, scalable, and responsive web applications engineered with clean code and modern frameworks.</p>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>User-centered interface and interaction design designed to drive high engagement and smooth user journeys.</p>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+        </div>
+        <h3>Search Engine Optimization</h3>
+        <p>Data-driven SEO strategies that elevate search engine visibility, keyword rankings, and organic traffic.</p>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+        </div>
+        <h3>Digital Marketing</h3>
+        <p>Targeted marketing campaigns, social strategy, and conversion rate optimization to scale leads fast.</p>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-swatchbook" aria-hidden="true"></i>
+        </div>
+        <h3>Brand Identity</h3>
+        <p>Crafting unique visual identities, guidelines, and logos that resonate with your target market.</p>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+        </div>
+        <h3>E-Commerce Solutions</h3>
+        <p>Building high-converting storefronts with streamlined checkout experiences and payment solutions.</p>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <p class="section-tag">TESTIMONIALS</p>
+            <h2>Loved by Businesses <span>Across the World</span></h2>
+            <p class="section-description">
+                We help startups, agencies and enterprises build beautiful digital experiences that deliver measurable business growth.
             </p>
-            <div class="stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="client">
-                <img src="assets/images/client1.jpg" alt="Robin Johnson - CEO Elevate Studio" width="100" height="100" loading="lazy">
-                <div>
-                    <h3>Robin Johnson</h3>
-                    <span>CEO • Elevate Studio</span>
-                </div>
-            </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="testimonial-card featured" data-aos="zoom-in">
-            <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
-            <p class="review">
-                The team delivered beyond expectations. The UI is modern, fast and optimized. We now convert nearly twice as many visitors.
-            </p>
-            <div class="stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="client">
-                <img src="assets/images/client2.jpg" alt="Sarah Miller - Founder NovaTech" width="100" height="100" loading="lazy">
-                <div>
-                    <h3>Sarah Miller</h3>
-                    <span>Founder • NovaTech</span>
+        <div class="testimonial-container">
+            <!-- Card 1 -->
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
+                <p class="review">
+                    NorthPeak Digital completely transformed our website. Within three months our online enquiries increased dramatically and our brand finally looked premium.
+                </p>
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="client">
+                    <img src="assets/images/client1.jpg" alt="Robin Johnson - CEO Elevate Studio" width="100" height="100" loading="lazy">
+                    <div>
+                        <h3>Robin Johnson</h3>
+                        <span>CEO • Elevate Studio</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="testimonial-card" data-aos="fade-up">
-            <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
-            <p class="review">
-                Excellent communication, clean code, beautiful design and an amazing user experience. Highly recommended.
-            </p>
-            <div class="stars" aria-label="5 out of 5 stars">
-                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+            <!-- Card 2 -->
+            <div class="testimonial-card featured" data-aos="zoom-in">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
+                <p class="review">
+                    The team delivered beyond expectations. The UI is modern, fast and optimized. We now convert nearly twice as many visitors.
+                </p>
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="client">
+                    <img src="assets/images/client2.jpg" alt="Sarah Miller - Founder NovaTech" width="100" height="100" loading="lazy">
+                    <div>
+                        <h3>Sarah Miller</h3>
+                        <span>Founder • NovaTech</span>
+                    </div>
+                </div>
             </div>
-            <div class="client">
-                <img src="assets/images/client3.jpg" alt="Emma Wilson - Marketing Director VisionLab" width="100" height="100" loading="lazy">
-                <div>
-                    <h3>Emma Wilson</h3>
-                    <span>Marketing Director • VisionLab</span>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
+                <p class="review">
+                    Excellent communication, clean code, beautiful design and an amazing user experience. Highly recommended.
+                </p>
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="client">
+                    <img src="assets/images/client3.jpg" alt="Emma Wilson - Marketing Director VisionLab" width="100" height="100" loading="lazy">
+                    <div>
+                        <h3>Emma Wilson</h3>
+                        <span>Marketing Director • VisionLab</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,7 +307,7 @@
 <section class="pricing-section" id="pricing">
     <div class="container">
         <div class="section-heading" data-aos="fade-up">
-            <span class="section-tag">Pricing</span>
+            <span class="section-tag">PRICING</span>
             <h2>Choose a Plan That <span>Fits Your Business</span></h2>
             <p>Transparent pricing with no hidden charges. Start small and scale as your business grows.</p>
         </div>
@@ -426,16 +524,18 @@
             <div>
                 <h3>Services</h3>
                 <ul>
-                    <li>Web Design</li>
-                    <li>UI/UX</li>
-                    <li>SEO</li>
-                    <li>Branding</li>
+                    <li><a href="#services">Web Design</a></li>
+                    <li><a href="#services">UI/UX</a></li>
+                    <li><a href="#services">SEO</a></li>
+                    <li><a href="#services">Branding</a></li>
                 </ul>
             </div>
             <div>
                 <h3>Newsletter</h3>
-                <input type="email" placeholder="Enter Email" aria-label="Newsletter Email Address">
-                <button type="submit">Subscribe</button>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter Email" aria-label="Newsletter Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
 
